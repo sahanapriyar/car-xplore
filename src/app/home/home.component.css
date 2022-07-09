@@ -1,0 +1,41 @@
+mat-toolbar{
+    width:100%;
+    display: flex;
+}
+.a{
+    display: flex;
+    flex: 1;
+}
+.a > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+}
+.s > ul > li {
+    margin: 10px;
+}
+.brand-card{
+    width: 30%;
+    padding: 10px;
+    float: left;
+    margin: 10px;
+    background-color: #e1e5ec;
+    cursor: pointer;
+
+}
+.example-container{
+    margin-top: 0px;
+    height:100vh;
+    
+}
+li {
+    cursor: pointer;
+}
+.sah{
+    cursor: pointer;
+}
+mat-sidenav-content{
+    left:110px;
+}

@@ -1,0 +1,27 @@
+<mat-card class="example-card">
+<form class="example-form">
+    <span class="a">CarXplore</span>
+    <br/><br/>
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Email or Phone</mat-label>
+        <input type="text" id="username" name="username" [(ngModel)]="username" matInput />
+    </mat-form-field>
+<!-- Username : <input type="text" id="username" name="username" [(ngModel)]="username"> -->
+<br/>
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Enter your password</mat-label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" matInput />
+</mat-form-field>
+<!-- Password : <input type="password" id="password" name="password" [(ngModel)]="password"> -->
+<br/><br/>
+<button mat-stroked-button type="button" (click)="login()">Log In</button>
+<button mat-stroked-button type="reset">Cancel</button>
+<br/><br/>
+<span>{{errormsg}}</span>
+<br/>
+New member? Create an account
+</form>
+<br/>
+<div class="example-button-row">
+<button mat-raised-button color="primary" (click)="navigateToRegister()">Sign Up</button></div>
+</mat-card>

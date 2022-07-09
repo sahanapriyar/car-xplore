@@ -1,0 +1,52 @@
+<mat-card class="example-card">
+<form class="example-form">
+  <span class="a">CarXplore</span>
+  <br/><br/>
+  <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Name</mat-label>
+      <input type="text" id="username" name="username" [(ngModel)]="username" matInput size="20"/>
+  </mat-form-field>
+  <!-- Username : <input type="text" id="un" name="username" [(ngModel)]="username"/> -->
+  <br/>
+  <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Phone number</mat-label>
+      <input type="number" id="mobno" name="mobilenum" [(ngModel)]="mobilenum" matInput />
+    </mat-form-field>
+  <!-- Mobile Number : <input type="number" id="mobno" name="mobilenum" [(ngModel)]="mobilenum"> -->
+  <br/>
+  <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Email</mat-label>
+      <input type="email" id="email" name="email" [(ngModel)]="mail" matInput required />
+  </mat-form-field>
+  <!-- Email : <input type="email" id="email" name="email" [(ngModel)]="mail"> -->
+  <br/>
+  <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Password</mat-label>
+      <input type="password" id="pswd" name="pswd" [(ngModel)]="pswd" matInput required />
+  </mat-form-field>
+  <!-- Password : <input type="password" id="pswd" name="pswd" [(ngModel)]="pswd"> -->
+  <br/>
+  <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Confirm password</mat-label>
+      <input type="password" id="cpswd" name="cpswd" [(ngModel)]="cpswd" matInput required />
+  </mat-form-field>
+  <!-- Confirm Password : <input type="password" id="cpswd" name="cpswd" [(ngModel)]="cpswd"> -->
+  <br/>
+  <input type="radio" id="male" name="gender" value="male" [(ngModel)]="gender" /> Male
+  <input type="radio" id="female" name="gender" value="female" [(ngModel)]="gender" /> Female
+  <input type="radio" id="others" name="gender" value="others" [(ngModel)]="gender" /> Others
+  <!-- Gender :
+           Male <input type="radio" id="male" name="gender" value="male" [(ngModel)]="gender" />
+           Female <input type="radio" id="female" name="gender" value="female" [(ngModel)]="gender" />
+           Others <input type="radio" id="others" name="gender" value="others" [(ngModel)]="gender" /> -->
+  <br/><br/>
+  <button mat-stroked-button type="submit" (click)="formSubmit()">Sign Up</button>
+  <button mat-stroked-button type="reset">Cancel</button>
+  <br/><br/>
+  <span>You have already registered. Please  </span>
+  <!-- <a routerLink="login">login</a> -->
+</form>
+<br/>
+<div class="example-button-row">
+<button mat-raised-button color="primary" (click)="navigateToLogin()">Log In</button></div>
+</mat-card>

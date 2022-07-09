@@ -1,0 +1,66 @@
+<!-- <mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>CarXplore</span>
+    <div class="a">
+      <ul>
+        <li>Welcome {{userName}}</li>
+        <li><button (click)="logOut()">LogOut</button>
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+  <br> -->
+
+  <mat-sidenav-container class="example-container">
+      <mat-sidenav mode="side" opened>
+      <ul>
+        <li class="sah" *ngFor="let car of carMakes" (click)="selectBrand(car)">{{car.name}}</li>
+      </ul>
+    </mat-sidenav>
+      <mat-sidenav-content>
+          <mat-toolbar color="primary">
+              <mat-toolbar-row>
+                <span>CarXplore</span>
+                <div class="a">
+                  <ul>
+                    <li>Welcome {{userName}}</li>
+                    <li><button (click)="logOut()">LogOut</button>
+                    </li>
+                  </ul>
+                </div>
+              </mat-toolbar-row>
+            </mat-toolbar>
+
+            <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div *ngFor="let car of carMakes" (click)="selectBrand(car)">
+  <mat-card class="brand-card">
+    <p>{{car.name}}</p>
+    <form>
+      <div>
+        <p>Beautiful dash {{car.name}}</p>
+      </div>
+  </form>
+  </mat-card> 
+</div> -->
+
+  <!-- <span>Welcome {{userName}}</span> -->
+  <!-- <button (click)="logOut()">LogOut</button> -->
